@@ -4,9 +4,9 @@ Track end-to-end user journeys for this project. Each flow file uses the `UF-###
 
 > The scaffold ships without project-specific flows; downstream projects copy UF-000 and add their own entries below.
 
-| Flow ID | Title | Status | Last Updated |
-| --- | --- | --- | --- |
+| ID | Name | Path | Summary |
+|----|------|------|---------|
 | *(add flows here)* |  |  |  |
-| [UF-000](UF-000-template.md) | **Template** – copy for new flows | n/a | 2025-10-14 |
+| UF-000 | Template | docs/user_flows/UF-000-template.md | Copy this file to seed project-specific user flows. |
 
 > Update this table whenever you add, rename, or retire a flow. Keep the rows ordered by Flow ID.
