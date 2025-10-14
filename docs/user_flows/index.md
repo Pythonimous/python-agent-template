@@ -9,4 +9,7 @@ Track end-to-end user journeys for this project. Each flow file uses the `UF-###
 | *(add flows here)* |  |  |  |
 | UF-000 | Template | docs/user_flows/UF-000-template.md | Copy this file to seed project-specific user flows. |
 
-> Update this table whenever you add, rename, or retire a flow. Keep the rows ordered by Flow ID.
+## How to use
+- Start here to locate the relevant flow ID and file path.
+- Load the specific flow file before implementing or updating behavior.
+- Update this table whenever you add, rename, or retire a flow. Keep the rows ordered by Flow ID.
