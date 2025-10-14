@@ -1,5 +1,5 @@
 # Lightweight Python Agent Template
-Lean scaffold for agentic Python projects with linting, typing, and layered tests ready to run.
+Lean scaffold for agentic Python projects with linting, typing, layered tests, and automation-friendly user flow docs ready to run.
 
 ## Quick Start
 ```bash
@@ -18,8 +18,12 @@ pytest
 ```
 .
 ├── .github/
-│   ├── instructions/
-│   └── prompts/
+│   ├── instructions/      # Development + testing guardrails
+│   └── prompts/           # Workflow automation prompts
+├── docs/
+│   └── user_flows/
+│       ├── UF-000-template.md
+│       └── index.md       # ID/Name/Path/Summary table for downstream flows
 ├── scripts/
 │   ├── run_e2e_tests.sh
 │   └── run_tests.sh
@@ -37,7 +41,13 @@ pytest
 - Run `.github/prompts/make-specs.prompt.md` to generate `specification.md`.
 - Run `.github/prompts/make-todo.prompt.md` to generate `TODO.md`.
 
+## User Flow Scaffolding
+- Start with `docs/user_flows/UF-000-template.md` when defining project-specific journeys.
+- Log each new flow in `docs/user_flows/index.md` using the `ID | Name | Path | Summary` format.
+- Downstream automation can reference the index to decide when to create or update end-to-end tests.
+
 ## References
 - Development workflow: `.github/instructions/development.instructions.md`
 - Testing workflow: `.github/instructions/testing.instructions.md`
 - Prompt library: `.github/prompts/`
+- User flows: `docs/user_flows/`
