@@ -14,6 +14,10 @@ pytest
 
 > Default package path is `src`. Export `SOURCE_DIR=your_module` and update `src/` if you pick a different name.
 
+**E2E Test Configuration** (for web apps):
+- Set `E2E_SERVER_COMMAND` to customize server startup (default: uvicorn)
+- Set `E2E_SERVER_DISABLED=true` for non-web projects or when tests manage their own server
+
 ## Repo Glance
 ```
 .
@@ -40,6 +44,7 @@ pytest
 ## Project Initialization
 - Run `.github/prompts/make-specs.prompt.md` to generate `specification.md`.
 - Run `.github/prompts/make-todo.prompt.md` to generate `TODO.md`.
+- Run `.github/prompts/configure-tooling.prompt.md` to align linting/testing tools with your stack.
 
 ## User Flow Scaffolding
 - Start with `docs/user_flows/UF-000-template.md` when defining project-specific journeys.
