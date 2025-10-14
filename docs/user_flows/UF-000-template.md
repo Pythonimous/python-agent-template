@@ -1,26 +1,39 @@
-# UF-000 Template: Replace With Flow Name
+---
+id: UF-XXX                     # Match the filename, e.g. UF-101
+name: Replace With Flow Name   # Short title for humans + agents
+last_updated: 2025-10-14       # ISO date; update when the flow changes
+status: draft                  # draft | in-progress | ready
+---
 
-## Metadata
-- **Status**: draft  <!-- draft | in-progress | ready -->
-- **Primary Actor**: TODO
-- **Secondary Actors**: TODO
-- **Preconditions**:
-  - TODO
-- **Postconditions**:
-  - TODO
+# UF-XXX — Replace With Flow Name
 
-## Narrative
-1. Describe each meaningful step the actor takes.
-2. Capture alternative paths or decisions in nested lists only when necessary.
-3. Highlight expected system reactions after each step.
+> Rename the file and keep the `id`/heading synchronized. Drop this tip once the flow is in use.
 
-## Success Criteria
+## Goal
+- Describe why this journey exists and the user value it delivers.
+
+## Actors
+- **Primary**: TODO
+- **Secondary**: Optional supporting actors (delete if none).
+
+## Preconditions
+- List environmental or system requirements that must already be true.
+
+## Steps
+1. Enumerate each user or system action in order.
+2. Include alternative branches inline where it helps readability.
+
+## Edge Cases
+- Capture off-nominal scenarios worth acknowledging or testing later.
+
+## Expected Results
 - Bullet the observable outcomes that prove the flow succeeded.
 
-## Test Coverage
-- Map each step to an automated check when possible.
-- Reference pytest markers or concrete test paths, e.g. `tests/e2e/test_project_init.py::test_user_can_bootstrap_repo`.
+## Related Tests
+- Unit: TODO or `None` if not applicable.
+- Integration: TODO or `None`.
+- E2E: Reference pytest node IDs, e.g. `tests/e2e/test_flow.py::test_happy_path`.
 
-## Notes
-- Call out open questions, edge cases, or future variations.
-- Delete sections that do not apply to the specific flow.
+## Notes (optional)
+- Open questions, follow-ups, or implementation hints.
+- Delete this section if it adds no signal.
