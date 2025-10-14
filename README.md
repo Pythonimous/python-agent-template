@@ -51,6 +51,13 @@ pytest
 - Log each new flow in `docs/user_flows/index.md` using the `ID | Name | Path | Summary` format.
 - Downstream automation can reference the index to decide when to create or update end-to-end tests.
 
+## Architecture Guardrails
+- Follow `docs/architecture.md` to keep modules small, cohesive, and testable.
+- Keep boundary layers (HTTP/CLI/UI) thin and delegate to services/utilities.
+- Prefer pure functions and explicit contracts so logic can be exercised in isolation.
+- Flake8 (via `max-complexity=10`) fails builds when functions grow too complex—tune via `.github/prompts/configure-tooling.prompt.md`.
+- Run `.github/prompts/architecture-audit.prompt.md` when you need a focused review of modularity decisions.
+
 ## References
 - Development workflow: `.github/instructions/development.instructions.md`
 - Testing workflow: `.github/instructions/testing.instructions.md`
