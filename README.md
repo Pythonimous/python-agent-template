@@ -2,15 +2,11 @@
 Lean scaffold for agentic Python projects with linting, typing, layered tests, and automation-friendly user flow docs ready to run.
 
 ## Quick Start
-```bash
-pip install -r requirements.txt   # or the project's chosen manager
-flake8
-mypy .
-pytest
-# optional:
-./scripts/run_tests.sh
-./scripts/run_e2e_tests.sh
-```
+1. Clone this template or fork it to create your project workspace.
+2. Run `.github/prompts/git-init.prompt.md` to detach from the template history and prime the README.
+3. Run `.github/prompts/make-specs.prompt.md` to capture `specification.md`.
+4. Run `.github/prompts/make-todo.prompt.md` to seed the backlog.
+5. Resume work with `.github/prompts/continue-development.prompt.md` and follow the loop below; when code lands, run `./scripts/run_tests.sh` (or the individual `flake8`, `mypy`, `pytest` commands) before closing a phase.
 
 > Default package path is `src`. Export `SOURCE_DIR=your_module` and update `src/` if you pick a different name.
 
