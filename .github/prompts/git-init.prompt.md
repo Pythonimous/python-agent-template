@@ -36,3 +36,5 @@ Acceptance:
 - Fresh git history with no upstream template references.
 - README reflects the new project's identity.
 - User is ready to run `make-specs.prompt.md` next.
+
+Follow the steps EXACTLY, do not make the project at this stage. Do not create any new files besides the 'README.md' file.
