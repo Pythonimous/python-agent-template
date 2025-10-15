@@ -4,7 +4,7 @@ Central catalog of the automation prompts available in this scaffold. Use it to 
 
 | Prompt | Description | When to Run |
 | --- | --- | --- |
-| `.github/prompts/git-init.prompt.md` | Reinitialize git safely after cloning or forking the template, then capture startup docs. | First setup pass on a new project workspace. |
+| `.github/prompts/git-init.prompt.md` | Wipe template history and initialize fresh git repo for a derived project, then generate project-specific README. | First setup pass when creating a new project from this scaffold. |
 | `.github/prompts/make-specs.prompt.md` | Generate a concise `specification.md` defining scope, flows, and risks. | Once stakeholders agree on project goals but details are loose. |
 | `.github/prompts/make-todo.prompt.md` | Build a phase-ordered `TODO.md` roadmap from the specification. | After `specification.md` exists and before implementation starts. |
 | `.github/prompts/configure-tooling.prompt.md` | Reconfigure linting, testing, typing, and E2E tooling. | When the default tooling needs to be swapped or tuned. |

@@ -1,14 +1,38 @@
 ---
 mode: 'agent'
-description: 'Initialize git and prepare project README.'
+description: 'Initialize git for a new project derived from this scaffold.'
 ---
 
-Assumptions:
-- This scaffold might have been cloned or forked already, so a `.git/` directory and remotes may exist. Confirm the repository points to the right origin before reinitializing.
+# Git Initialization for Derived Projects
 
-Steps:
-1. Confirm project name and key goals if unclear.
-2. If `.git/` exists, inspect `git status` and `git remote -v`; delete or detach the history only after saving anything you need.
-3. Run `git init --initial-branch main` (or `git init`) in the repository root once the workspace is clean.
-4. Create or update `README.md` with overview, setup steps, test commands, and current status.
-5. Stage the initial files and commit with a descriptive message.
+## Step 1: Confirm Project Type
+Ask the user: "Is this the original scaffold repository, or a new project derived from it (clone/fork)?"
+- If **scaffold**: exit; no changes needed.
+- If **derived project**: proceed to Step 2.
+
+## Step 2: Gather Project Context
+Ask the user:
+- Project name
+- One-sentence project goal or description
+- Primary use case or target audience (optional but helpful for README)
+
+## Step 3: Wipe Repository History
+1. Confirm with the user that wiping history is acceptable.
+2. Remove the existing `.git` directory: `rm -rf .git`
+3. Reinitialize: `git init --initial-branch main`
+
+## Step 4: Generate Fresh README
+Create a new `README.md` with:
+- Project name and goal from Step 2
+- Quick Start pointing to `make-specs.prompt.md` and `make-todo.prompt.md`
+- Brief scaffold overview (testing, linting, architecture docs)
+- References section (instructions, prompts, user flows)
+
+## Step 5: Initial Commit
+1. Stage all files: `git add .`
+2. Commit with message: `"Initial commit: [project-name] scaffold"`
+
+Acceptance:
+- Fresh git history with no upstream template references.
+- README reflects the new project's identity.
+- User is ready to run `make-specs.prompt.md` next.
